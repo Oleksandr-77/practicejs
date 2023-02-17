@@ -242,3 +242,59 @@
 //     return false;
 //   }
 // }
+
+
+/*
+  1. Коллбек функції
+  - Визначення та призначення
+  Напишіть такі функції:
+  handleProduct(productData, callback) - приймає об'єкт товару, а 
+  також коллбек. Функція викликає коллбек передаючи йому 
+  об'єкт 
+  logProduct(product) - коллбек, що приймає об'єкт товару і логує 
+  його у консоль 
+  logTotalPrice(product) - коллбек, що приймає об'єкт товару і 
+  логує загальну вартість товару в консоль
+  Об'єкт товару має поля name, quantity та price
+  - Показати в якому порядку викликаються функції
+*/
+
+// function handleProduct(product, callback) {
+//   callback(product);
+// }
+
+// function logProduct(product) {
+//   console.log(product);
+// }
+
+// function logTotalPrice(product) {
+//   console.log(product.price * product.quantity);
+// }
+
+// handleProduct(
+//   {
+//     name: '🍋',
+//     price: 20,
+//     quantity: 5,
+//   },
+//   logTotalPrice
+// );
+
+// handleProduct(
+//   {
+//     name: '🍎',
+//     price: 30,
+//     quantity: 3,
+//   },
+//   logProduct
+// );
+
+// const getSortedFriends = users => {
+//   // const allFriends = users.flatMap(user => user.friends);
+// // const uniqueFriends = allFriends.filter((friend, index, array) => array.indexOf(friend) === index);
+  
+//   return [...users].flatMap(user => user.friends).filter((friend, index, array) => array.indexOf(friend) === index).sort((a, b) => a.localeCompare(b));
+// // Change code above this line
+ 
+// };
+
